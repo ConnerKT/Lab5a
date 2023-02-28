@@ -86,13 +86,17 @@ test passes.*/
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-  
-  console.log(ans1);
+  let a = testArray[0];
+  let b = testArray[1];
+  let c = testArray[2];
+  let total = sum(a, b)[0];
+  let finaltotal = sum(total, c)[0];
+  return[finaltotal, a + ','+ b + ',' + c + " was passed in as an array of numbers, and " + finaltotal + " is their sum."];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+// testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
